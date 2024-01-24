@@ -191,16 +191,8 @@ catty.speak()
 // This method should find all instances of a specific word within a provided paragraph of text. 
 // It should then alert out to the user the number of time that word was found in the paragraph. Remember, you’ll need to add your method to the String object’s prototype.
 
+
 /*
-const String = function() {
-
-}
-
-String.prototype.findWords = function(inpWord) {
-
-}
-
-*/
 
 
 text = "This is a string example"
@@ -208,11 +200,8 @@ text = "This is a string example"
 
 String.prototype.findWords = function(wordToFind) {
 
-    //let wordToFind = "is"
     let exp = new RegExp(wordToFind, 'g');
-
     let count = this.match(exp);
-
     if (count == null) {
         alert(0)
     } else {
@@ -223,6 +212,7 @@ String.prototype.findWords = function(wordToFind) {
 text.findWords("string") // one occurence
 text.findWords("yuh") // not present
 
+*/
 /*
 function Box(value) {
     this.value = value;

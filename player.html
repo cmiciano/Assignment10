@@ -4,13 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M12 Assignment - The Music Player Application</title>
-    <script src="js/player.js"></script>
+    <script src="js/player.js" defer></script>
 </head>
 <body>
     <h1>The Music Player</h1>
     <!-- ADD DROP DOWN MENU -->
+    <label for="albums">Choose an album:</label>
+        <select name="albums" id="albums">
+        <option value="Energy">Energy</option>
+        <option value="Dude Ranch">Dude Ranch</option>
+        <option value="Sticks and Stones">Sticks and Stones</option>
+    </select>
     <!-- ADD PLAY BUTTON -->
+    <br>
+    <button id="play" type="button">Play</button>
+    <p id="timesPlayed"></p>
+
+    <br>
+    <br>
+
     <!-- ADD SHOW FAVORITE ALBUM BUTTON -->
+    <button id="fave" type="button">Show my favorite album</button>
     <p id="favoriteAlbum"></p>
 </body>
 </html>
